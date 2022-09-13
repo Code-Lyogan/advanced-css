@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#grid-checkerboard {
+    position: absolute;
+    background-color: purple;
+    height: 100%;
+    width: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.column {
+    float: left;
+    width: 12.5%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.row {
+    width: 100%;
+    height: 12.5%;
+}
+
+.row:nth-child(even) {
+    background-color: purple;
+}
+
+.column:nth-child(odd) {
+    background-color: gold;
+}
+
+.column:nth-child(even) .row:nth-child(even) {
+    background-color: gold;
+}
